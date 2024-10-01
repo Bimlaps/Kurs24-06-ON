@@ -1,49 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <title>Css Div Image Hover</title>
+
+    <style>
+        .container{
+            width:90%;
+            padding: 20px;
+            margin: 100px auto;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;    
+        }
+        .box{
+            width:250px;
+            margin:0 10px;
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0, 1);
+            transition: 1s;
+        }
+        .box img{
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .box:hover{
+            transform:scale(1.3);
+            z-index: 2;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Fotografie Seite</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toni Kroos - Fußballlegende</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header mit Navigation -->
     <header>
-        <h1>Willkommen auf meiner Fotografie-Seite!</h1>
+        <h1>Toni Kroos - Der Maestro des Mittelfelds</h1>
         <nav>
             <ul>
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#gallery">Galerie</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Über uns</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Section 1: Informationen über Toni Kroos -->
     <section id="about">
-        <h2>Über mich</h2>
-        <p>Hallo! Ich bin ein leidenschaftlicher Fotograf, der die Schönheit der Natur einfängt. Diese Webseite zeigt einige meiner besten Arbeiten.</p>
+        <h2>Über Toni Kroos</h2>
+        <p>Toni Kroos, geboren am 4. Januar 1990 in Greifswald, Deutschland, ist ein deutscher Profi-Fußballer, der als Mittelfeldspieler für Real Madrid und die deutsche Nationalmannschaft spielt.<br>
+            Er ist bekannt für seine präzisen Pässe, seine ruhige Art auf dem Platz und seine außergewöhnliche Spielübersicht.</p>
+        <p>Kroos begann seine Karriere bei Bayern München, bevor er 2014 zu Real Madrid wechselte.<br>Mit Real Madrid hat er zahlreiche Titel gewonnen, darunter mehrere Champions League-Trophäen.</p>
     </section>
 
-    <section id="gallery">
-        <h2>Galerie</h2>
-        <figure>
-            <img src="Sonnenuntergang.jpg" alt="Ein wunderschöner Sonnenuntergang">
-            <figcaption>Ein atemberaubender Sonnenuntergang, aufgenommen im Sommer 2023.</figcaption>
-        </figure>
-
-        <p>Jedes Bild erzählt eine Geschichte. Von der goldenen Stunde bis hin zu faszinierenden Landschaften, meine Fotografie fängt die Schönheit der Welt ein.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Du kannst mich über folgende Wege erreichen:</p>
+    <!-- Section 2: Karriere-Highlights von Toni Kroos -->
+    <section id="highlights">
+        <h2>Karriere-Highlights</h2>
         <ul>
-            <li>Email: <a href="mailto:fotograf@picstudio.de">fotograf@picstudio.de</a></li>
-            <li>Instagram: <a href="https://instagram.com">Mein Instagram-Profil</a></li>
+            <li>Champions League Sieger: 6x</li>
+            <li>Weltmeister mit Deutschland: 2014</li>
+            <li>Europameisterschaft Teilnehmer: 3x</li>
+            <li>Mehrere nationale Meisterschaften mit Bayern München und Real Madrid</li>
         </ul>
     </section>
 
+    <!-- Section 3: Bild von Toni Kroos -->
+    <section id="image">
+        <h2>Toni Kroos in Aktion</h2>
+        <img src="toni-kroos.jpg" alt="Toni Kroos auf dem Spielfeld" width="600">
+    </section>
+
+    <!-- Section 4: Bildergalerie -->
+    <section id="galery">
+        <h2>Bildergalerie</h2>
+        <div class="galery">
+            <div class="container">
+                <div class="box">
+                    <img src="T-K-1.jpg" alt="#">
+                </div>
+            </div>
+            <div class="box">
+                <img src="T-K-2.jpg" alt="#">
+            </div>
+            <img src="T-K-3.jpg" alt="#">
+            <div class="box">
+                <img src="T-K-4.jpg" alt="#">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Meine Fotografie-Seite. Alle Rechte vorbehalten.</p>
+        <p>© 2024 Toni Kroos</p>
+        <ul>
+            <li><a href="https://de.wikipedia.org/wiki/Toni_Kroos" target="_blank">Wikipedia</a></li>
+            <li><a href="https://www.tonikroos-academy.com/de/" target="_blank">Toni Kroos Academy</a></li>
+        </ul>
     </footer>
 </body>
 </html>
