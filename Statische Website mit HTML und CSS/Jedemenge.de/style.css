@@ -1,0 +1,111 @@
+/* Grundlegendes Styling */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.header, .footer { 
+    background-color: #333; 
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.content {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Abschnitt 1: Produktdetails */
+.product-details {
+    margin-bottom: 30px;
+}
+
+.product-info {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.product-features .feature {
+    margin: 10px 0;
+}
+
+.product-features strong {
+    display: inline-block;
+    width: 120px;
+}
+
+/* Abschnitt 2: Produktbilder */
+.product-images {
+    margin-bottom: 30px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 30%; /* Stellt sicher, dass jedes Bild mit Button 30% des Containers einnimmt */
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Button-Styling */
+.buy-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Stellt sicher, dass der Button die volle Breite des Containers einnimmt */
+}
+
+/* Hover-Effekt für den Button */
+.buy-button:hover {
+    background-color: #e68a00;
+}
+
+/* Responsive Design für Tablets */
+@media (max-width: 768px) {
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        width: 100%; /* Stellt sicher, dass die Bilder und Buttons die volle Breite auf kleineren Bildschirmen einnehmen */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .product-images img {
+        width: 100%;
+    }
+
+    .buy-now button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .price span {
+        font-size: 1.2rem;
+    }
+}
